@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  height: 100vh;
+}
+
+.title-container {
+  height: 4%;
+  background-color: #27ae60;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: 450;
+  outline: none;
+}
+
+.menubar {
+  height: 4%;
+  display: flex;
+  align-items: center;
+  background-color: white;
+}
+
+.menubar div {
+  margin-left: 1.4rem;
+}
+
+.menu-options-section {
+  height: 7%;
+  background-color: #2ecc71;
+}
+
+.formula-section {
+  height: 4%;
+  display: flex;
+}
+
+.formula-section .selected-cell-div {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border: none;
+  border-right: 1px solid;
+}
+
+.formula-section .formula-input-section {
+  width: 80%;
+  height: 100%;
+  border: none;
+  outline: none;
+  display: block;
+}
+
+.grid {
+  height: 77%;
+  background-color: white;
+  overflow: auto;
+  position: relative;
+  z-index: 10px;
+}
+
+.sheets-section {
+  height: 4%;
+  background-color: #2ecc71;
+}
+
+.blank-corner {
+  height: 30px;
+  width: 30px;
+  background-color: #f5f6fa;
+  position: fixed;
+  top: 19vh;
+  z-index: 20;
+  border-top: 1px solid black;
+}
+
+.row-number-section {
+  display: inline-block;
+  position: fixed;
+  top: calc(19vh + 30px);
+  left: 0;
+  /* z-index: 5; */
+}
+
+.row-number {
+  height: 30px;
+  width: 30px;
+  background-color: #27ae60;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-bottom: 1px solid;
+}
+
+.column-tag-section {
+  height: 30px;
+  position: fixed;
+  background: mediumseagreen;
+  top: 19vh;
+  left: 30px;
+  display: flex;
+  z-index: 10;
+}
+
+.column-tag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  flex-shrink: 0;
+  height: 30px;
+  background-color: #27ae60;
+  border: none;
+  border-right: 1px solid;
+  color: white;
+}
+
+.cell-section {
+  height: calc(77vh - 30px);
+  width: calc(100vw - 30px);
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  overflow: auto;
+  outline: none;
+}
+
+.cell {
+  width: 80px;
+  height: 30px;
+  border: 1px solid;
+  flex-shrink: 0;
+  outline: none;
+}
+
+.cell-selected {
+  border: 3px solid rgb(77, 111, 204);
+}
+
+.row {
+  display: flex;
+}
